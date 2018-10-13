@@ -22,6 +22,7 @@ class Transfer
     if valid?
       @receiver.balance += amount
       @sender.balance -= amount
+      @status = "complete"
     end
   end
 
